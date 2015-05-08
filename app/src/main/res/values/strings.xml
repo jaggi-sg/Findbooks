@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">FindBooks</string>
+    <string name="welcome_msg">Welcome to FindBooks</string>
+    <string name="about_app">Search for books in bookstore using BLE technology</string>
+    <string name="action_settings">Settings</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="Login">START</string>
+    <string name="attempts">Attempts Left:</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="search_textview">Click below to Scan</string>
+    <string name="searchbook">Search</string>
+    <string name="title_activity_scan">ScanActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+
+
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    <!-- Menu items -->
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+    <string name="title_activity_scan_books">ScanBooksActivity</string>
+
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jagadish.findbooks" >
+
+    <uses-sdk
+        android:maxSdkVersion="22"
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Main Activity -->
+        <activity
+            android:name="com.example.jagadish.findbooks.MainActivity"
+            android:label="@string/app_name"
+            android:logo="@mipmap/ic_launcher" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Search Activity -->
+        <activity
+            android:name="com.example.jagadish.findbooks.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:parentActivityName="com.example.jagadish.findbooks.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jagadish.findbooks.MainActivity" />
+        </activity>
+        <!-- Scan Activity -->
+        <activity
+            android:name="com.example.jagadish.findbooks.ScanActivity"
+            android:label="@string/title_activity_scan"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+            android:parentActivityName="com.example.jagadish.findbooks.SearchActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jagadish.findbooks.SearchActivity" />
+        </activity>
+        <activity
+            android:name="com.example.jagadish.findbooks.ScanBooksActivity"
+            android:label="@string/title_activity_scan_books" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jagadish.findbooks.ScanBooksActivity">
+
+    <TextView
+        android:id="@+id/scanned_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+       android:text="Scanned Category of Books" />
+
+    <TextView
+        android:id="@+id/category_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scanned_category"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp"
+        android:text="Category Name:" />
+
+    <EditText
+        android:id="@+id/cat_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_above="@+id/address"
+        android:layout_toRightOf="@+id/category_name"
+        android:layout_toEndOf="@+id/category_name"
+        android:layout_below="@+id/scanned_category">
+    </EditText>
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp"
+        android:layout_below="@+id/category_name"
+        android:text="Category Location:" />
+
+    <EditText
+        android:id="@+id/cat_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/category_name"
+        android:layout_toRightOf="@+id/address"
+        android:layout_toEndOf="@+id/address">
+    </EditText>
+
+<!--  <EditText
+        android:id="@+id/cat_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/cat_address">
+    </EditText> -->
+
+         <ListView
+            android:id="@+id/booksList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cat_address">
+        </ListView>
+
+
+</RelativeLayout>
