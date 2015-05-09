@@ -1,3 +1,10 @@
+/*
+*
+Author: Jagadish Shivanna
+References: https://developer.android.com/guide/topics/connectivity/bluetooth-le.html
+**On click of a category from scanned sensors list, displays books of that category**
+*
+*/
 package com.example.jagadish.findbooks;
 
 import android.content.Intent;

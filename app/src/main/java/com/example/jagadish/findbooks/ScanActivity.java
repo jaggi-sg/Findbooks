@@ -1,3 +1,10 @@
+/*
+*
+Author: Jagadish Shivanna
+References: https://developer.android.com/guide/topics/connectivity/bluetooth-le.html
+**Displays scanned bluetooth smart sensors as books category**
+*
+*/
 package com.example.jagadish.findbooks;
 
 import android.app.Activity;

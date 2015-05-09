@@ -1,3 +1,10 @@
+/*
+*
+Author: Jagadish Shivanna
+References: https://developer.android.com/guide/topics/connectivity/bluetooth-le.html
+**Expects the user to click a button to start scan**
+*
+*/
 package com.example.jagadish.findbooks;
 
 import android.os.Bundle;
