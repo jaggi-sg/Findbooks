@@ -1,6 +1,6 @@
 # Findbooks
-Android app to find books in bookstore using Android BLE technology.
-Developed using TI sensor Tags (CC2541).
+### Android app to find books in bookstore using Android BLE technology. Developed using TI sensor Tags (CC2541).
+----------------
 
 
 * The application makes use of Bluetooth Low Energy technology. 
