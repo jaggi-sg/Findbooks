@@ -10,7 +10,7 @@ Developed using TI sensor Tags (CC2541).
 
 * When the user launches the app, it scans for nearby bluetooth smart sensors (Like the CC5241 used in project) which are the categories of books in bookstore and lists them
 
-* On selection of a category, the list of books for that category is returned along with the excat location of the book
+* On selection of a category, the list of books for that category is returned along with the exact location of the book
 
 * Requirements to run the app
   * Android version 4.3 and later (BLE Compatible)
